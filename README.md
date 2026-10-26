@@ -12,9 +12,9 @@ The project begins in Barranquilla, Colombia, with the long-term vision of makin
 
 Residents will be able to report issues, attach supporting evidence, and explore community-submitted information through an interactive neighborhood map.
 
-> **Project status:** Discovery and MVP planning. The application is not yet available for public use.
+> **Project status:** Discovery and MVP validation are ongoing. The initial backend and frontend foundations are implemented. The application is not yet available for public use.
 
-## The Problem
+# The Problem
 
 Neighborhoods frequently experience issues such as:
 
@@ -66,6 +66,39 @@ The final MVP scope is still being validated.
 | CI/CD | GitHub Actions |
 
 These technologies represent our current architectural direction and may evolve as requirements are validated.
+
+## Repositories
+
+Mi barrio al día uses two independent repositories:
+
+| Repository | Responsibility |
+|---|---|
+| [Backend](https://github.com/Shoukoratte/mi-barrio-al-dia-backend) | Java 21, Spring Boot, REST API, persistence, security, and backend tests |
+| [Frontend](https://github.com/Shoukoratte/mi-barrio-al-dia-frontend) | React, TypeScript, Vite, user interface, and interactive maps |
+
+Each repository has its own development workflow, branches, Pull Requests, and build tools.
+
+Both applications communicate through HTTP and JSON using documented API contracts.
+
+The repository separation is documented in [ADR-007](docs/decisions/ADR-007-separate-frontend-backend-repositories.md).
+
+### Backend Development
+
+Requirements: Java 21.
+
+Run backend tests from this repository's root directory:
+
+```powershell
+.\mvnw.cmd test
+```
+
+Run the application:
+
+```powershell
+.\mvnw.cmd spring-boot:run
+```
+
+The initial health endpoint is available at `http://localhost:8080/api/health` while the backend is running.
 
 ## Architecture
 

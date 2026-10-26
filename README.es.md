@@ -65,6 +65,39 @@ El alcance definitivo del MVP todavía está sujeto a validación.
 
 La arquitectura evolucionará según las necesidades reales del producto.
 
+## Repositorios
+
+Mi barrio al día está organizado en dos repositorios independientes:
+
+| Repositorio | Responsabilidad |
+|---|---|
+| [Backend](https://github.com/Shoukoratte/mi-barrio-al-dia-backend) | Java 21, Spring Boot, API REST, persistencia, seguridad y pruebas |
+| [Frontend](https://github.com/Shoukoratte/mi-barrio-al-dia-frontend) | React, TypeScript, Vite, interfaz de usuario y mapas interactivos |
+
+Cada repositorio tiene sus propias ramas, Pull Requests, dependencias y herramientas de construcción.
+
+Ambas aplicaciones se comunicarán mediante HTTP y JSON, utilizando contratos de API documentados.
+
+La decisión de separar los repositorios está registrada en [ADR-007](docs/decisions/ADR-007-separate-frontend-backend-repositories.md).
+
+### Desarrollo del backend
+
+Requisito: Java 21.
+
+Para ejecutar las pruebas desde la raíz del repositorio:
+
+```powershell
+.\mvnw.cmd test
+```
+
+Para iniciar la aplicación:
+
+```powershell
+.\mvnw.cmd spring-boot:run
+```
+
+Con el servidor ejecutándose, puedes comprobar el endpoint inicial en `http://localhost:8080/api/health`.
+
 ## Principios del proyecto
 
 - **Enfoque comunitario:** resolver necesidades identificadas mediante investigación.

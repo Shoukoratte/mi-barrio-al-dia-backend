@@ -1,6 +1,6 @@
 # ADR-003: Repository Strategy — Conventional Monorepo
 
-**Status:** Accepted  
+**Status:** Superseded by ADR-007
 **Date:** 2026-10-14  
 **Project:** Mi barrio al día
 
