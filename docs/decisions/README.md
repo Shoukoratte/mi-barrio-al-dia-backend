@@ -27,6 +27,7 @@ Each ADR should include:
 | ADR-002 | Internationalization strategy | Proposed |
 | ADR-003 | [Repository Strategy — Conventional Monorepo](ADR-003-repository-strategy.md) | Superseded by ADR-007 |
 | ADR-007 | [Separate Frontend and Backend Repositories](ADR-007-separate-frontend-backend-repositories.md) | Accepted |
+
 ## Guidelines
 
 - Keep each decision in a separate Markdown file.

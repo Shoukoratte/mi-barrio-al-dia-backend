@@ -14,7 +14,7 @@ Residents will be able to report issues, attach supporting evidence, and explore
 
 > **Project status:** Discovery and MVP validation are ongoing. The initial backend and frontend foundations are implemented. The application is not yet available for public use.
 
-# The Problem
+## The Problem
 
 Neighborhoods frequently experience issues such as:
 
