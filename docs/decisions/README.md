@@ -25,7 +25,8 @@ Each ADR should include:
 |---|---|---|
 | ADR-001 | Zero-cost development and initial deployment strategy | Accepted |
 | ADR-002 | Internationalization strategy | Proposed |
-| ADR-003 | [Repository Strategy — Conventional Monorepo](ADR-003-repository-strategy.md) | Accepted |
+| ADR-003 | [Repository Strategy — Conventional Monorepo](ADR-003-repository-strategy.md) | Superseded by ADR-007 |
+| ADR-007 | [Separate Frontend and Backend Repositories](ADR-007-separate-frontend-backend-repositories.md) | Accepted |
 
 ## Guidelines
 

@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Legacy local frontend directory after repository split
+/frontend/
+
+# Environment files containing local configuration or secrets
+.env
+.env.*
+!.env.example
